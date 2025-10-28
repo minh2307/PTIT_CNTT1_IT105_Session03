@@ -1,0 +1,6 @@
+| **Use Case A**    | **Use Case B**    | **Mối quan hệ** | **Giải thích**                                                                                                                                   |
+| ----------------- | ----------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Đặt hàng          | Kiểm tra giỏ hàng | <<include>>     | Khi người dùng đặt hàng, hệ thống **luôn phải kiểm tra giỏ hàng** để xác nhận sản phẩm và số lượng.                                              |
+| Đặt hàng          | Đề xuất hoá đơn   | <<include>>     | Trong quá trình đặt hàng, hệ thống **tự động tạo hoặc đề xuất hoá đơn** để người dùng thanh toán.                                                |
+| Đặt hàng          | Xem đánh giá      | <<extend>>      | Người dùng **có thể chọn xem đánh giá sản phẩm** trước khi xác nhận đặt hàng (không bắt buộc).                                                   |
+| Kiểm tra giỏ hàng | Đề xuất hoá đơn   | association     | Sau khi kiểm tra giỏ hàng, người dùng **có thể tiếp tục** sang bước tạo hoá đơn — đây là **mối quan hệ tương tác trực tiếp** giữa hai chức năng. |
